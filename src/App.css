@@ -1,0 +1,20 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: '';
+}
+
+.rgb {
+  pointer-events: none;
+  box-shadow: none;
+  outline: none;
+  outline-offset: none;
+  border: 1px solid black;
+}
+
+.label{
+  pointer-events: none;
+}
+
