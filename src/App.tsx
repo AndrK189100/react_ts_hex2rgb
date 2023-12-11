@@ -10,7 +10,7 @@ const [data, setData]=useState({hex: '', rgb: ''})
     e.preventDefault();
     const val = e.target.value;
     if(!val.match('^#[a-fA-F0-9]{0,6}$')) {
-      if(val === '') setData({hex: '', rgb: ''})
+      if(val === '') setData({hex: '', rgb: data.rgb})
       return;  
     }
     if(val.length === 7) {
@@ -19,7 +19,7 @@ const [data, setData]=useState({hex: '', rgb: ''})
       setData({hex: e.target.value, rgb: rgb});
       return;
     }
-    setData({hex: e.target.value, rgb: ''});
+    setData({hex: e.target.value, rgb: data.rgb});
 
   }
 
